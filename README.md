@@ -1,5 +1,24 @@
-# Vue 3 + Vite
+# Todo App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple Todo application built with Vue.js, Vite and Tailwind that allows users to create, view, and manage todo items, with data persistence using local storage.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Project Structure
+
+### 1. `App.vue`
+- Main component managing the layout and state.
+- Initializes and manages the `todos` array, syncing with local storage.
+
+### 2. `components/Greeting.vue`
+- Greets the user and allows name input.
+- Stores and retrieves the name from local storage.
+
+### 3. `components/CreateForm.vue`
+- Form for adding new todos with content and category selection.
+- Validates input and updates the parent `todos` array.
+
+### 4. `components/List.vue`
+- Displays the list of todos.
+- Allows marking todos as done and deleting them.
+
+## Local Storage
+Uses local storage to persist todos and user name across sessions.
